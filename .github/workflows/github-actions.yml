@@ -2,16 +2,15 @@ name: deploy-spa-githubPages
 run-name: spa deployed to Github Pages
 on: [push]
 jobs:
-
-    runs-on: ubuntu-latest
-    steps:
- -
-  name: Checkout
-  uses: actions/checkout@v3
- -
-  name: Deploy to GitHub Pages
-  if: success()
-  uses: crazy-max/ghaction-github-pages@v3
+runs-on: ubuntu-latest
+steps:
+    -
+    name: Checkout
+    uses: actions/checkout@v3
+    -
+     name: Deploy to GitHub Pages
+     if: success()
+    uses: crazy-max/ghaction-github-pages@v3
     with:
           target_branch: gh-pages
           build_dir: prod
