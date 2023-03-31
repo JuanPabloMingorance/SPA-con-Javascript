@@ -4,6 +4,7 @@
   "description": "single page application",
   "main": "index.js",
   "scripts": {
+    "test": "",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
