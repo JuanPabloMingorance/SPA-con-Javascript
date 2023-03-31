@@ -2,7 +2,7 @@ name: deploy-spa-githubPages
 run-name: spa deployed to Github Pages
 on: [push]
 jobs:
- publish:
+
     runs-on: ubuntu-latest
     steps:
  -
